@@ -52,7 +52,7 @@ Cuando se habla del equipo de desarrollo se refiere a un conjunto de personas co
   
 # Ceremonias
 
-Es importante tener en cuenta que estas ceremonias son específicas del Scrum, un proceso o “metodología” ágil (completamente opuesta a la metodología de cascada) que los equipos utilizan en todo el mundo para construir cosas que funcionen. Scrum es intencionalmente ligero y simple, pero puede ser difícil de dominar. Su objetivo es proporcionar un marco para que los equipos multifuncionales resuelvan problemas complejos, o lleven a cabo proyectos de innovación.
+Es importante tener en cuenta que estas ceremonias son específicas del Scrum, un proceso o “metodología” ágil (completamente opuesta a la metodología de cascada) que los equipos utilizan en todo el mundo para construir cosas que funcionen. Scrum es intencionalmente ligero y simple, pero puede ser difícil de dominar. Su objetivo es proporcionar un marco para que los equipos multifuncionales resuelvan problemas complejos, o lleven a cabo proyectos de innovación. Estas ceremonias son:
 
 ● Sprint Planning Meeting (reunión de planificación del sprint): Se produce al iniciar cada
 Sprint y tiene por objetivo decidir que se va a realizar en el Sprint.
