@@ -45,8 +45,8 @@ Un equipo Scrum, por lo general, esta compuesto por grupos de trabajo de entre 3
 ● Equipo de desarrollo: Se encargan de desarrollar el producto, auto-organizándose y auto-gestionándose para conseguir entregar un incremento de software al final del ciclo de desarrollo.
 
 ● Development Team(DT): Este equipo se concibe bajo el concepto de “Diferentes personas con un mismo propósito”, tienen un objetivo en común y comparten la responsabilidad del trabajo que realizan, sumado la calidad del proyecto en cada iteración.
-Cuando se habla del equipo de desarrollo se refiere a un conjunto de personas con habilidades técnicas que de manera conjunta desarrollan el producto del proyecto.
   
+Cuando se habla del equipo de desarrollo se refiere a un conjunto de personas con habilidades técnicas que de manera conjunta desarrollan el producto del proyecto.
 
 ¿Cuales son las ceremonias en Scrum?
   
@@ -69,5 +69,6 @@ Product Owner.
 ● Sprint Retrospective Meeting (reunión de retrospectiva del Sprint): Se produce también al
 finalizar el Sprint y tiene por objeto documentar qué ha funcionado y qué no ha funcionado
 en el Sprint. La idea de dicha reunión es centrar al equipo en lo que salió bien y en lo que
-debe mejorar para la próxima iteración. De ninguna manera se centra en lo que salió mal.  
-  
+debe mejorar para la próxima iteración. De ninguna manera se centra en lo que salió mal.
+                    
+Cuando se habla del equipo de desarrollo se refiere a un conjunto de personas con habilidades técnicas que de manera conjunta desarrollan el producto del proyecto.
