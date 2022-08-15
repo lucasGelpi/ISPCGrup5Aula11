@@ -39,14 +39,12 @@ INSERT INTO DUENO
 (DNI, NOMBRE, APELLIDO, TELEFONO, DIRECCION)
 values
 (37048304, 'Sofia', 'Canepa', 3512375465, 'Sarmiento 867'),
-(11945467, 'Marcos', 'Suarez', 3444576461, 'Belgrano 77'),
-(33982460, 'Lucas', 'Gelpi', 3514575462, 'Las Magnolias 67');
+(11945467, 'Marcos', 'Suarez', 3444576461, 'Belgrano 77');
 
 INSERT INTO PERRO
 (NOMBRE, FECHA_NAC, SEXO, DNI_DUENO)
 values
-('Pancho', '2021-09-11', 'Masculino', 33982460),
-('Tokio', '2020-05-22', 'Masculino', 11945467),
+('Pancho', '2021-09-11', 'Masculino', 33982460)
 ('Tita', '2017-12-12', 'Femenino', 37048304);
 
 INSERT INTO HISTORIAL
