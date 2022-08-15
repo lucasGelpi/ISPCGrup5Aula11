@@ -1,0 +1,78 @@
+DROP DATABASE IF EXISTS PELUQUERIA;
+CREATE DATABASE PELUQUERIA;
+
+USE PELUQUERIA;
+
+CREATE TABLE DUENO (
+DNI INT NOT NULL,
+NOMBRE VARCHAR(50),
+APELLIDO VARCHAR(50),
+TELEFONO LONG,
+DIRECCION VARCHAR(100),
+PRIMARY KEY (DNI)
+);
+
+CREATE TABLE PERRO (
+ID_PERRO INT NOT NULL AUTO_INCREMENT,
+NOMBRE VARCHAR(50),
+FECHA_NAC DATE,
+SEXO VARCHAR(50),
+DNI_DUENO INT NOT NULL,
+PRIMARY KEY (ID_PERRO),
+CONSTRAINT FK_DUENO FOREIGN KEY (DNI_DUENO)
+REFERENCES DUENO(DNI)
+);
+
+CREATE TABLE HISTORIAL (
+ID_HISTORIAL INT NOT NULL AUTO_INCREMENT,
+FECHA DATE,
+PERRO VARCHAR(50),
+DESCRIPCION VARCHAR(100),
+MONTO INT,
+ID_PERRO INT NOT NULL,
+PRIMARY KEY (ID_HISTORIAL),
+CONSTRAINT FK_PERRO FOREIGN KEY (ID_PERRO)
+REFERENCES PERRO(ID_PERRO)
+);
+
+INSERT INTO DUENO
+(DNI, NOMBRE, APELLIDO, TELEFONO, DIRECCION)
+values
+(37048304, 'Sofia', 'Canepa', 3512375465, 'Sarmiento 867'),
+(11945467, 'Marcos', 'Suarez', 3444576461, 'Belgrano 77'),
+(33982460, 'Lucas', 'Gelpi', 3514575462, 'Las Magnolias 67');
+
+INSERT INTO PERRO
+(NOMBRE, FECHA_NAC, SEXO, DNI_DUENO)
+values
+('Pancho', '2021-09-11', 'Masculino', 33982460),
+('Tokio', '2020-05-22', 'Masculino', 11945467),
+('Tita', '2017-12-12', 'Femenino', 37048304);
+
+INSERT INTO HISTORIAL
+(FECHA, PERRO, DESCRIPCION, MONTO, ID_PERRO)
+values
+('2022-05-18', 'Pancho', 'Baño', 2000, 1),
+('2020-03-03', 'Tokio', 'Corte de pelo', 2500, 2),
+('2018-08-23', 'Tita', 'Corte de uñas', 1500, 3);
+
+select * from DUENO;
+select * from PERRO;
+select * from HISTORIAL;
+
+#Insertar un nuevo registro en la 
+#tabla historial de un perro cuyo ID Perro es igual a 10.
+INSERT INTO HISTORIAL
+(FECHA, PERRO, DESCRIPCION, MONTO, ID_PERRO)
+values
+('2022-05-18', (select Nombre from Perro where id_perro=10), 'Baño', 2000, (select ID_PERRO from Perro where id_perro=10));
+
+#Sin embargo la insercion anterior falla cuando no existe un perro con id = 10
+# Al probar con un id valido funciona
+INSERT INTO HISTORIAL
+(FECHA, PERRO, DESCRIPCION, MONTO, ID_PERRO)
+values
+('2022-05-18', (select Nombre from Perro where id_perro=2), 'Baño', 2000, (select ID_PERRO from Perro where id_perro=2));
+
+
+
